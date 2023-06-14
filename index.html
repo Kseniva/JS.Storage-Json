@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <title>Superheroes</title>
+  </head>
+  <body>
+    <h1>Superhero list</h1>
+    <div class="superheroes__container"></div>
+
+    <!--Шаблон со звездным рейтингом-->
+    <template id="template"
+      ><fieldset class="rating">
+        <legend class="rating__caption">Оценить</legend>
+        <div class="rating__group">
+          <input
+            class="rating__star"
+            type="radio"
+            value="1"
+            aria-label="Ужасно"
+            checked
+          />
+          <input
+            class="rating__star"
+            type="radio"
+            value="2"
+            aria-label="Сносно"
+          />
+          <input
+            class="rating__star"
+            type="radio"
+            value="3"
+            aria-label="Нормально"
+          />
+          <input
+            class="rating__star"
+            type="radio"
+            value="4"
+            aria-label="Хорошо"
+          />
+          <input
+            class="rating__star"
+            type="radio"
+            value="5"
+            aria-label="Отлично"
+          />
+        </div>
+      </fieldset>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
